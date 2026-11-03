@@ -1,0 +1,6 @@
+SOURCE-private  (do NOT upload this folder)
+- index.source.html : your readable, editable page (keep as backup)
+- build.js          : turns index.source.html into the protected war-shop-site/index.html
+                      (node + esbuild: strips every comment, minifies HTML/CSS/JS)
+Upload ONLY the war-shop-site folder to Netlify.
+After each edit: run: npm i esbuild  then  node build.js index.source.html ../war-shop-site/index.html
